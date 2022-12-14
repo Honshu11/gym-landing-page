@@ -3,14 +3,16 @@ html, body{
     text-align: center;
     align-items: center;
     align-content: center;
+    color: #e0e1dd;
+    background-color: black;
 }
 
 nav {
-    background-color: #333;
+    background-color: gray;
     padding: 0.5em;
 }
 
-nav a {
+nav > a {
     color: white;
     text-decoration: none;
 }
@@ -42,5 +44,13 @@ hr {
   margin-bottom: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  border-width: 1px;
+  border-width: 5px;
+}
+
+.bg-dark {
+    background-color: #0d1b2a !important;
+}
+
+.bg-secondary {
+    background-color: #1b263b !important;
 }
