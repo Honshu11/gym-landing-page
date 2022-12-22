@@ -13,6 +13,12 @@ const submitHandler = (event) => {
   // Get the value of each form element and add it to the formData object
   formData.name = document.querySelector('#full-name').value;
   formData.email = document.querySelector('#email').value;
+  formData.services = {};
+  
+  var checkboxes = Array.from(form.querySelectorAll('.services input'));
+  checkboxes.forEach(function(checkbox) {
+    formData.services[checkbox.name] = checkbox.checked;
+  })
   
   //formData.service = document.querySelector('input[name="service"]:checked').value;
   formData.message = document.querySelector('#message').value;
