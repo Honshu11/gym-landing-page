@@ -23,6 +23,15 @@ const submitHandler = (event) => {
   //formData.service = document.querySelector('input[name="service"]:checked').value;
   formData.message = document.querySelector('#message').value;
   console.log(formData);  
+
+  fetch('/api/register', {
+    method: 'POST',
+    body: JSON.stringify(formData),
+    headers: {
+      'content-type': 'application/json',
+    }
+  })
+
   // Return the form data
   return formData;
 };
