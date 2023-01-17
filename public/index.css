@@ -48,6 +48,10 @@ hr {
   background-color: #e0e1dd;
 }
 
+li {
+    list-style: none;
+}
+
 .bg-dark {
     background-color: #0d1b2a !important;
 }
@@ -59,4 +63,6 @@ hr {
 .text-primary {
     color: #e0e1dd !important;
 }
+
+
 
